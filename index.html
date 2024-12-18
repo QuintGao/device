@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Example</title>
     <!-- 链接到外部CSS文件 -->
-    <link rel="stylesheet" href="file://css/styles.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
 </head>
+<style>
+    @import url('css/style.css')
+</style>
 <body>
     <h1>Hello, World!</h1>
     <div>
-        <img src="file://images/aaa.png">
+        <img src="images/aaa.png" class="resize-image">
     </div>
     <p id="message">This is a simple example.</p>
     <button onclick="changeMessage()">Click Me!</button>
     <!-- 链接到外部JS文件，通常放在body的末尾以便页面加载完毕后再执行JS -->
-    <script src="file://js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
