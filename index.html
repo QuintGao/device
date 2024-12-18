@@ -1,24 +1,20 @@
-<html v-app="ibsapp">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>移动银行</title>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta name="viewport"
-	content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="format-detection" content="telephone=no" />
-<script type="text/javascript" src="test://jquery/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-	
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Example</title>
+    <!-- 链接到外部CSS文件 -->
+    <link rel="stylesheet" href="file://css/styles.css">
 </head>
-<body >
-	<div>
-        <p>this is a test</p>
+<body>
+    <h1>Hello, World!</h1>
+    <div>
+        <img src="file://images/aaa.png">
     </div>
-    <div>
-        <img src="test://css/aaa.png"/>
-    <div>
-    
+    <p id="message">This is a simple example.</p>
+    <button onclick="changeMessage()">Click Me!</button>
+    <!-- 链接到外部JS文件，通常放在body的末尾以便页面加载完毕后再执行JS -->
+    <script src="file://js/script.js"></script>
 </body>
 </html>
