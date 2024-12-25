@@ -3,18 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Example 111</title>
-    <!-- 链接到外部CSS文件 -->
-   <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>HTML Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            width: 103.5px;
+        }
+        th {
+            background-color: white;
+        }
+        thead tr {
+            height: 37px;
+        }
+        
+        tr {
+            background-color: white;
+            height: 82px;
+        }
+        a {
+            color: blue; /* 设置文字颜色为蓝色 */
+            text-decoration: none; /* 去掉下划线 */
+            cursor: pointer; /* 鼠标悬停时显示为手型 */
+        }
+        a:hover {
+            text-decoration: underline; /* 鼠标悬停时显示下划线（可选） */
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World 007</h1>
-    <div>
-        <img src="/aaa.png" class="resize-image">
-    </div>
-    <p id="message">This is a simple example.</p>
-    <button onclick="changeMessage()">Click Me!</button>
-    <!-- 链接到外部JS文件，通常放在body的末尾以便页面加载完毕后再执行JS -->
-    <script src="/script.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>获奖时间</th>
+                <th>获奖名称</th>
+                <th>获奖作品</th>
+                <th>获奖结果</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024/2/10</td>
+                <td>第2界中国电视剧年度盛典</td>
+                <td><a href="">去有风的地方</a></td>
+                <td>提名</td>
+            </tr>
+            <tr>
+                <td>2023/12/28</td>
+                <td>第14界澳门国际电视节女主角</td>
+                <td><a href="">去有风的地方</a></td>
+                <td>获奖</td>
+            </tr>
+            <tr>
+                <td>2023/9/1</td>
+                <td>第1界金熊猫奖电视剧单元最佳女主角</td>
+                <td><a href="">梦华录</a></td>
+                <td>获奖</td>
+            </tr>
+            <tr>
+                <td>2023/6/28</td>
+                <td>第18界首尔国际电视节最佳女演员</td>
+                <td><a href="">梦华录</a></td>
+                <td>获奖</td>
+            </tr>
+            <tr>
+                <td>2023/3/31</td>
+                <td>第3界新时代国际电视节斑螺旋奖</td>
+                <td><a href="">梦华录</a></td>
+                <td>提名</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
