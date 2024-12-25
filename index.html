@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Table</title>
     <style>
+        .table-container {
+            width: 436px; /* 父容器宽度 */
+            overflow-x: auto; /* 添加水平滚动条 */
+            border: 1px solid #ddd; /* 可选，给容器添加边框 */
+        }
         table {
             border-collapse: collapse;
             table-layout: fixed;
@@ -38,47 +43,49 @@
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>获奖时间</th>
-                <th>获奖名称</th>
-                <th>获奖作品</th>
-                <th>获奖结果</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2024/2/10</td>
-                <td>第2界中国电视剧年度盛典</td>
-                <td><a href="">去有风的地方</a></td>
-                <td>提名</td>
-            </tr>
-            <tr>
-                <td>2023/12/28</td>
-                <td>第14界澳门国际电视节女主角</td>
-                <td><a href="">去有风的地方</a></td>
-                <td>获奖</td>
-            </tr>
-            <tr>
-                <td>2023/9/1</td>
-                <td>第1界金熊猫奖电视剧单元最佳女主角</td>
-                <td><a href="">梦华录</a></td>
-                <td>获奖</td>
-            </tr>
-            <tr>
-                <td>2023/6/28</td>
-                <td>第18界首尔国际电视节最佳女演员</td>
-                <td><a href="">梦华录</a></td>
-                <td>获奖</td>
-            </tr>
-            <tr>
-                <td>2023/3/31</td>
-                <td>第3界新时代国际电视节斑螺旋奖</td>
-                <td><a href="">梦华录</a></td>
-                <td>提名</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>获奖时间</th>
+                    <th>获奖名称</th>
+                    <th>获奖作品</th>
+                    <th>获奖结果</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024/2/10</td>
+                    <td>第2界中国电视剧年度盛典</td>
+                    <td><a href="">去有风的地方</a></td>
+                    <td>提名</td>
+                </tr>
+                <tr>
+                    <td>2023/12/28</td>
+                    <td>第14界澳门国际电视节女主角</td>
+                    <td><a href="">去有风的地方</a></td>
+                    <td>获奖</td>
+                </tr>
+                <tr>
+                    <td>2023/9/1</td>
+                    <td>第1界金熊猫奖电视剧单元最佳女主角</td>
+                    <td><a href="">梦华录</a></td>
+                    <td>获奖</td>
+                </tr>
+                <tr>
+                    <td>2023/6/28</td>
+                    <td>第18界首尔国际电视节最佳女演员</td>
+                    <td><a href="">梦华录</a></td>
+                    <td>获奖</td>
+                </tr>
+                <tr>
+                    <td>2023/3/31</td>
+                    <td>第3界新时代国际电视节斑螺旋奖</td>
+                    <td><a href="">梦华录</a></td>
+                    <td>提名</td>
+                </tr>
+            </tbody>
+        </table>
+    </div
 </body>
 </html>
