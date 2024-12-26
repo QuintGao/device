@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Table</title>
+    <title>Fixed Cell Table with Horizontal Scroll</title>
     <style>
+        /* 表格容器，支持横向滚动 */
         .table-container {
-            width: 436px; /* 父容器宽度 */
-            overflow-x: auto; /* 添加水平滚动条 */
-            border: 1px solid #ddd; /* 可选，给容器添加边框 */
-        }
-        table {
-            border-collapse: collapse;
-            table-layout: fixed;
-            margin: auto;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-            width: 103.5px;
-        }
-        th {
-            background-color: white;
-        }
-        thead tr {
-            height: 37px;
+            width: 100%; /* 父容器宽度 */
+            overflow-x: auto; /* 横向滚动 */
+            
+            /* 隐藏滚动条 */
+            scrollbar-width: none; /* 隐藏 Firefox 滚动条 */
+            -ms-overflow-style: none; /* 隐藏 IE 和 Edge 滚动条 */
         }
         
-        tr {
-            background-color: white;
-            height: 82px;
+        .table-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* 表格样式 */
+        table {
+            border-collapse: collapse; /* 合并单元格边框 */
+            table-layout: fixed; /* 固定单元格布局 */
+            width: 440px; /* 表格宽度超过屏幕宽度 */
+            margin: auto;
+        }
+
+        th, td {
+            width: 110px; /* 每个单元格的固定宽度 */
+            height: 82px; /* 每个单元格的固定高度 */
+            text-align: center; /* 内容居中 */
+            border: 1px solid #ddd; /* 单元格边框 */
+        }
+        
+        thead th {
+            height: 38px;
+        }
+
+        th {
+            background-color: white; /* 表头背景色 */
         }
         a {
             color: blue; /* 设置文字颜色为蓝色 */
@@ -86,6 +95,6 @@
                 </tr>
             </tbody>
         </table>
-    </div
+    </div>
 </body>
 </html>
