@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Fixed Cell Table with Horizontal Scroll</title>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
         /* 表格容器，支持横向滚动 */
         .table-container {
             width: 100%; /* 父容器宽度 */
