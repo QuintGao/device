@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Fixed Cell Table with Horizontal Scroll</title>
+    <title>iPhone Device</title>
     <style>
         html, body {
             margin: 0;
@@ -11,6 +11,13 @@
             overflow: visible;
             padding-left: 15px;
             padding-right: 15px;
+        }
+        
+        /* 设置h1左对齐 */
+        h1 {
+            text-align: left;  /* 让标题左对齐 */
+            margin-left: 0;    /* 去掉默认的左边距 */
+            padding-left: 0;   /* 防止默认的内边距 */
         }
         
         /* 表格容器，支持横向滚动 */
@@ -31,13 +38,11 @@
         table {
             border-collapse: collapse; /* 合并单元格边框 */
             table-layout: fixed; /* 固定单元格布局 */
-            width: 440px; /* 表格宽度超过屏幕宽度 */
-            margin: auto;
         }
 
         th, td {
             width: 110px; /* 每个单元格的固定宽度 */
-            height: 82px; /* 每个单元格的固定高度 */
+            height: 44px; /* 每个单元格的固定高度 */
             text-align: center; /* 内容居中 */
             border: 1px solid #ddd; /* 单元格边框 */
         }
@@ -60,46 +65,571 @@
     </style>
 </head>
 <body>
+    <h1>iPhone所有手机型号屏幕尺寸记录</h1>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
-                    <th>获奖时间</th>
-                    <th>获奖名称</th>
-                    <th>获奖作品</th>
-                    <th>获奖结果</th>
+                    <th>手机型号</th>
+                    <th>屏幕尺寸<br>（对角线）</th>
+                    <th>物理点</th>
+                    <th>宽高比</th>
+                    <th>像素点</th>
+                    <th>倍数</th>
+                    <th>状态栏高度</th>
+                    <th>导航栏高度</th>
+                    <th>状态栏+导航栏</th>
+                    <th>顶部安全区域</th>
+                    <th>底部安全区域</th>
+                    <th>tabBar高度</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>2024/2/10</td>
-                    <td>第2界中国电视剧年度盛典</td>
-                    <td><a href="">去有风的地方</a></td>
-                    <td>提名</td>
+                    <td>iPhone 4/4S</td>
+                    <td>3.5英寸</td>
+                    <td>320x480</td>
+                    <td>0.667</td>
+                    <td>640x960</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
                 </tr>
                 <tr>
-                    <td>2023/12/28</td>
-                    <td>第14界澳门国际电视节女主角</td>
-                    <td><a href="">去有风的地方</a></td>
-                    <td>获奖</td>
+                    <td>iPhone 5/5S/5C</td>
+                    <td>4英寸</td>
+                    <td>320x568</td>
+                    <td>0.563</td>
+                    <td>640x1136</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
                 </tr>
                 <tr>
-                    <td>2023/9/1</td>
-                    <td>第1界金熊猫奖电视剧单元最佳女主角</td>
-                    <td><a href="">梦华录</a></td>
-                    <td>获奖</td>
+                    <td>iPhone SE</td>
+                    <td>4英寸</td>
+                    <td>320x568</td>
+                    <td>0.563</td>
+                    <td>640x1136</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
                 </tr>
                 <tr>
-                    <td>2023/6/28</td>
-                    <td>第18界首尔国际电视节最佳女演员</td>
-                    <td><a href="">梦华录</a></td>
-                    <td>获奖</td>
+                    <td>iPhone 6</td>
+                    <td>4.7英寸</td>
+                    <td>375x667</td>
+                    <td>0.562</td>
+                    <td>750x1334</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
                 </tr>
                 <tr>
-                    <td>2023/3/31</td>
-                    <td>第3界新时代国际电视节斑螺旋奖</td>
-                    <td><a href="">梦华录</a></td>
-                    <td>提名</td>
+                    <td>iPhone 6 Plus</td>
+                    <td>5.5英寸</td>
+                    <td>414x736</td>
+                    <td>0.563</td>
+                    <td>1242x2208</td>
+                    <td>@3x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone 6s</td>
+                    <td>4.7英寸</td>
+                    <td>375x667</td>
+                    <td>0.562</td>
+                    <td>750x1334</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone 6s Plus</td>
+                    <td>5.5英寸</td>
+                    <td>414x736</td>
+                    <td>0.563</td>
+                    <td>1242x2208</td>
+                    <td>@3x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone 7</td>
+                    <td>4.7英寸</td>
+                    <td>375x667</td>
+                    <td>0.562</td>
+                    <td>750x1334</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone 7 Plus</td>
+                    <td>5.5英寸</td>
+                    <td>414x736</td>
+                    <td>0.563</td>
+                    <td>1242x2208</td>
+                    <td>@3x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone 8</td>
+                    <td>4.7英寸</td>
+                    <td>375x667</td>
+                    <td>0.562</td>
+                    <td>750x1334</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone 8 Plus</td>
+                    <td>5.5英寸</td>
+                    <td>414x736</td>
+                    <td>0.563</td>
+                    <td>1242x2208</td>
+                    <td>@3x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone X</td>
+                    <td>5.8英寸</td>
+                    <td>375x812</td>
+                    <td>0.462</td>
+                    <td>1125x2346</td>
+                    <td>@3x</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>88</td>
+                    <td>44</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone XS</td>
+                    <td>5.8英寸</td>
+                    <td>375x812</td>
+                    <td>0.462</td>
+                    <td>1125x2346</td>
+                    <td>@3x</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>88</td>
+                    <td>44</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone XS Max</td>
+                    <td>6.5英寸</td>
+                    <td>414x896</td>
+                    <td>0.462</td>
+                    <td>1242x2688</td>
+                    <td>@3x</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>88</td>
+                    <td>44</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone XR</td>
+                    <td>6.1英寸</td>
+                    <td>414x896</td>
+                    <td>0.462</td>
+                    <td>828x1792</td>
+                    <td>@2x</td>
+                    <td>44(iOS13)<br>48(iOS14)</td>
+                    <td>44</td>
+                    <td>88(iOS13)<br>92(iOS14)</td>
+                    <td>44</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 11</td>
+                    <td>6.1英寸</td>
+                    <td>414x896</td>
+                    <td>0.462</td>
+                    <td>828x1792</td>
+                    <td>@3x</td>
+                    <td>44(iOS13)<br>48(iOS14)</td>
+                    <td>44</td>
+                    <td>88(iOS13)<br>92(iOS14)</td>
+                    <td>48</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 11 Pro</td>
+                    <td>5.8英寸</td>
+                    <td>375x812</td>
+                    <td>0.462</td>
+                    <td>1125x2436</td>
+                    <td>@3x</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>88</td>
+                    <td>44</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 11 Pro Max</td>
+                    <td>6.5英寸</td>
+                    <td>414x896</td>
+                    <td>0.462</td>
+                    <td>1242x2688</td>
+                    <td>@3x</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>88</td>
+                    <td>44</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone SE 2nd Gen</td>
+                    <td>4.7英寸</td>
+                    <td>375x667</td>
+                    <td>0.562</td>
+                    <td>750x1334</td>
+                    <td>@2x</td>
+                    <td>20</td>
+                    <td>44</td>
+                    <td>64</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>iPhone 12 mini</td>
+                    <td>5.4英寸</td>
+                    <td>360x780</td>
+                    <td>0.461</td>
+                    <td>1080x2340</td>
+                    <td>@3x</td>
+                    <td>44(iOS13)<br>50(iOS14)</td>
+                    <td>44</td>
+                    <td>88(iOS13)<br>94(iOS14)</td>
+                    <td>50</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 12</td>
+                    <td>6.1英寸</td>
+                    <td>390x844</td>
+                    <td>0.462</td>
+                    <td>1170x2532</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 12 Pro</td>
+                    <td>6.1英寸</td>
+                    <td>390x844</td>
+                    <td>0.462</td>
+                    <td>1170x2532</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 12 Pro Max</td>
+                    <td>6.7英寸</td>
+                    <td>428x926</td>
+                    <td>0.462</td>
+                    <td>1284x2778</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 13 mini</td>
+                    <td>5.4英寸</td>
+                    <td>360x780</td>
+                    <td>0.461</td>
+                    <td>1080x2340</td>
+                    <td>@3x</td>
+                    <td>44(iOS13)<br>50(iOS14)</td>
+                    <td>44</td>
+                    <td>88(iOS13)<br>94(iOS14)</td>
+                    <td>50</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 13</td>
+                    <td>6.1英寸</td>
+                    <td>390x844</td>
+                    <td>0.462</td>
+                    <td>1170x2532</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 13 Pro</td>
+                    <td>6.1英寸</td>
+                    <td>390x844</td>
+                    <td>0.462</td>
+                    <td>1170x2532</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 13 Pro Max</td>
+                    <td>6.7英寸</td>
+                    <td>428x926</td>
+                    <td>0.462</td>
+                    <td>1284x2778</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 14</td>
+                    <td>6.1英寸</td>
+                    <td>390x844</td>
+                    <td>0.462</td>
+                    <td>1170x2532</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 14 Plus</td>
+                    <td>6.7英寸</td>
+                    <td>428x926</td>
+                    <td>0.462</td>
+                    <td>1284x2778</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 14 Pro</td>
+                    <td>6.1英寸</td>
+                    <td>393x852</td>
+                    <td>0.461</td>
+                    <td>1179x2556</td>
+                    <td>@3x</td>
+                    <td>54</td>
+                    <td>44</td>
+                    <td>97.667</td>
+                    <td>59</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 14 Pro Max</td>
+                    <td>6.7英寸</td>
+                    <td>430x932</td>
+                    <td>0.461</td>
+                    <td>1290x2796</td>
+                    <td>@3x</td>
+                    <td>54</td>
+                    <td>44</td>
+                    <td>97.667</td>
+                    <td>59</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 15</td>
+                    <td>6.1英寸</td>
+                    <td>393x852</td>
+                    <td>0.461</td>
+                    <td>1179x2556</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 15 Plus</td>
+                    <td>6.7英寸</td>
+                    <td>430x932</td>
+                    <td>0.461</td>
+                    <td>1290x2796</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>47</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 15 Pro</td>
+                    <td>6.1英寸</td>
+                    <td>393x852</td>
+                    <td>0.461</td>
+                    <td>1179x2556</td>
+                    <td>@3x</td>
+                    <td>54</td>
+                    <td>44</td>
+                    <td>97.667</td>
+                    <td>59</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 15 Pro Max</td>
+                    <td>6.7英寸</td>
+                    <td>430x932</td>
+                    <td>0.461</td>
+                    <td>1290x2796</td>
+                    <td>@3x</td>
+                    <td>54</td>
+                    <td>44</td>
+                    <td>97.667</td>
+                    <td>59</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 16</td>
+                    <td>6.1英寸</td>
+                    <td>393x852</td>
+                    <td>0.461</td>
+                    <td>1179x2556</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>59</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 16 Plus</td>
+                    <td>6.7英寸</td>
+                    <td>430x932</td>
+                    <td>0.461</td>
+                    <td>1290x2796</td>
+                    <td>@3x</td>
+                    <td>47</td>
+                    <td>44</td>
+                    <td>91</td>
+                    <td>59</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 16 Pro</td>
+                    <td>6.3英寸</td>
+                    <td>402x874</td>
+                    <td>0.459</td>
+                    <td>1206x2622</td>
+                    <td>@3x</td>
+                    <td>54</td>
+                    <td>44</td>
+                    <td>100.333</td>
+                    <td>62</td>
+                    <td>34</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>iPhone 16 Pro Max</td>
+                    <td>6.7英寸</td>
+                    <td>440x956</td>
+                    <td>0.460</td>
+                    <td>1320x2868</td>
+                    <td>@3x</td>
+                    <td>54</td>
+                    <td>44</td>
+                    <td>100.333</td>
+                    <td>62</td>
+                    <td>34</td>
+                    <td>83</td>
                 </tr>
             </tbody>
         </table>
